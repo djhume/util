@@ -18,7 +18,7 @@
 # Configuration parameters.
 
 # The hostname or IP-address of the fileserver:
-FILESERVER="yournfsserverhere"
+FILESERVER="192.168.1.1"
 
 # Mount Options (see mount man pages for info).
 MOUNTOPTS="-o rw,hard,intr,tcp,actimeo=3"
@@ -33,7 +33,7 @@ DELIMETER="|"
 # differ, write something like "/media/remoteshare|/media/localshare", where "|" is
 # the delimeter configured above. If the mount points are the same, you can also use 
 # the short-hand "/media/share".
-MOUNTS=( "/media/exampleRemote1|/media/exampleLocal1" "/media/exampleMount2" )
+MOUNTS=( "/mnt/photosA" "/mnt/media" )
 
 # Logging. Set to true for debugging and testing; false when everything works. Logs 
 # are written to /var/log/upstart/autonfs.log.
